@@ -100,10 +100,11 @@ result = html.xpath('//li[1]/attribute::*')
 result = html.xpath('//li[1]/child::a[@href="link1.html"]')
 # 选取href属性为link1.html的子节点
 result = html.xpath('//li[1]/descendant::span')
+# 获取所有子孙节点，且限定条件为span
+result = html.xpath('//li[1]/following::*[2]')
+# following可以获取当前节点之后的所有节点
+result = html.xpath('//li[1]/following-sibling::*')
+# following可以获取当前节点之后的所有同级节点
 print(result)
-
-
-
-
 
 # 详细使用参考 www.w3school.com.cn/xpath/xpath_functions.asp
