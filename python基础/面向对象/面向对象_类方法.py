@@ -48,16 +48,3 @@ class sample(speaker,student):
 
 test = sample("Tim", 23, 70, 3,"love")
 test.speak()
-
-
-
-
-
-
-
-
-
-
-
-
-
